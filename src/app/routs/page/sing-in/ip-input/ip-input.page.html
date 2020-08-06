@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>输入IP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div style="height: 30%;">
+    <ion-row class="inp-row">
+      <ion-col size="2" tappable align-self-end class="adress jz-center" (click)="checkValue(1,address1,$event)"
+        [ngClass]="{'btn-foucouce':address1.isClear,'btn-selected': index==1}">
+        {{address1.number}}
+      </ion-col>
+      <ion-col size="1" col-auto align-self-end no-padding class="point">
+        .
+      </ion-col>
+      <ion-col size="2" tappable align-self-end class="adress jz-center" (click)="checkValue(2,address2,$event)"
+        [ngClass]="{'btn-foucouce':address2.isClear,'btn-selected': index==2}">
+        {{address2.number}}
+      </ion-col>
+      <ion-col size="1" col-auto align-self-end no-padding class="point">
+        .
+      </ion-col>
+      <ion-col size="2" tappable align-self-end class="adress jz-center" (click)="checkValue(3,address3,$event)"
+        [ngClass]="{'btn-foucouce':address3.isClear,'btn-selected': index==3}">
+        {{address3.number}}
+      </ion-col>
+      <ion-col size="1" col-auto align-self-end no-padding class="point">
+        .
+      </ion-col>
+      <ion-col size="2" tappable align-self-end class="adress jz-center" (click)="checkValue(4,address4,$event)"
+        [ngClass]="{'btn-foucouce':address4.isClear,'btn-selected': index==4}">
+        {{address4.number}}
+      </ion-col>
+    </ion-row>
+  </div>
+  <div style="height: 70%;" *ngIf="index==1">
+    <number-keyboard [number]="address1" [maxLength]='3' [havePoint]='fales' [isClear]='true' (confirm)="confirm()">
+    </number-keyboard>
+  </div>
+  <div style="height: 70%;" *ngIf="index==2">
+    <number-keyboard [number]="address2" [maxLength]='3' [havePoint]='fales' [isClear]='true' (confirm)="confirm()">
+    </number-keyboard>
+  </div>
+  <div style="height: 70%;" *ngIf="index==3">
+    <number-keyboard [number]="address3" [maxLength]='3' [havePoint]='fales' [isClear]='true' (confirm)="confirm()">
+    </number-keyboard>
+  </div>
+  <div style="height: 70%;" *ngIf="index==4">
+    <number-keyboard [number]="address4" [maxLength]='3' [havePoint]='fales' [isClear]='true' (confirm)="confirm()">
+    </number-keyboard>
+  </div>
+</ion-content>

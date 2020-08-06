@@ -1,0 +1,39 @@
+car-btn {
+        .operation-btns {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        
+            .button {
+                margin: 0;
+                height: auto;
+                padding-left: 0;
+                padding-right: 0;
+                min-height: auto;
+            }
+        
+            .add {
+                padding:r(5px);
+                margin: r(10px);
+            }
+        
+            .sub {
+                padding:r(5px);
+                margin: r(5px);
+            }
+        
+            .num {
+                font-size:r(32px);
+                color: #333;
+                width: r(100px)!important;
+                // background: #efefef;
+                border: 1px solid #efefef;
+                padding: r(10px) r(20px) r(10px) r(20px);
+                text-align: center;
+            }
+        
+            ion-icon {
+                font-size: r(60px);
+            }
+        }
+}

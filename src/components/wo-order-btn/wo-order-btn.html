@@ -1,0 +1,10 @@
+<div class="operation-btns">
+  <button ion-button clear class="sub" no-lines (click.stop)="subData()" *ngIf="item.currCrossoutNum != 0" [disabled]="subDisabled">
+    <ion-icon color="thirdly" name="remove-circle-outline" #subEle></ion-icon>
+  </button>
+  <span class="num" *ngIf="item.currCrossoutNum > 0"
+    (click.stop)="changeNum($event)">{{item.currCrossoutNum > 0?item.currCrossoutNum:''}}</span>
+  <button ion-button no-lines clear class="add" (click.stop)="addData($event)" [disabled]="addDisabled" >
+    <ion-icon color="thirdly" name="add-circle" #addEle></ion-icon>
+  </button>
+</div>

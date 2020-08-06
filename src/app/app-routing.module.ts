@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'new-page',
+    loadChildren: () => import('./routs/new-page/new-page.module').then( m => m.NewPagePageModule)
+  },
+  {
+    path: 'sing-in',
+    loadChildren: () => import('./routs/page/sing-in/sing-in.module').then( m => m.SingInPageModule)
   }
 ];
 

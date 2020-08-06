@@ -1,0 +1,71 @@
+@import "../../../../../assets/css/base.scss";
+
+.content-ios,
+.scroll-content {
+    background-color: #ffffff;
+
+}
+
+.keyboard-header {
+    ion-row {
+        width : 100%;
+        height: 90% !important;
+
+    }
+
+    ion-col {
+        height: 50px !important;
+    }
+}
+
+.inp-row {
+    padding-top: 10px;
+}
+
+.scroll-content {
+    background: #efefef;
+}
+
+.header-item {
+
+    span {
+        color: #BBBBBB !important;
+    }
+}
+
+.row-button {
+    background: #ffffff;
+    width     : 100%;
+}
+
+.btn-selected {
+    padding-top: r(10px);
+    color      : red;
+    border     : 1px solid red;
+}
+
+.btn-foucouce {
+    background: rgb(198, 214, 248) !important;
+}
+
+
+.adress {
+    border          : 1px solid #999999;
+    margin          : r(10px) r(10px) r(10px) r(10px);
+    // padding: r(10px);
+    border-radius   : r(5px);
+    text-align      : center;
+    font-size       : r(38px);
+    border          : 1px solid red;
+    background-color: transparent;
+    border-color    : #979797;
+    vertical-align  : bottom;
+    height          : 50px;
+}
+
+.point {
+    font-size: r(50px);
+    text-align: center;
+    vertical-align: bottom;
+    height          : 50px;
+}

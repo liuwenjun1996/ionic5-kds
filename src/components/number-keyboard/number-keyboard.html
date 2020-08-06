@@ -1,0 +1,34 @@
+<div class="container" style="height: 100%;">
+  <div class="keyboard" style="height: 100%;">
+    <ion-row class="keyboard-box" style="height: 100%;">
+      <ion-col size="8" style="height: 100%;">
+        <ion-row text-center class="full-height">
+          <ion-col size="4" style="height: 25%;" class="jz-center" *ngFor="let num of keyboardNum"
+            (click)="addStr(num)">
+            {{num}}
+          </ion-col>
+          <ion-col *ngIf="true" tappable size="4" tappable style="height: 25%;" class="jz-center"
+            (click)="addStr('00')">00</ion-col>
+          <ion-col tappable size="4" tappable style="height: 25%;" class="jz-center" (click)="addStr(0)">0</ion-col>
+          <ion-col tappable size="4" tappable style="height: 25%;" class="jz-center" (click)="addStr('.')"
+            *ngIf="havePoint">.
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col style="height: 100%;" class="keyboard-box-right" size="4">
+        <ion-row text-center class="full-height">
+          <ion-col style="height: 25%;" class="jz-center" tappable size="12" (click)="clear()">
+            清空
+          </ion-col>
+          <ion-col style="height: 25%;" class="jz-center" tappable size="12" (click)="del()">
+            <!-- <ion-icon name="close"></ion-icon> -->
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </ion-col>
+
+          <ion-col style="height: 50%;" class="jz-center" tappable size="12" class="q-col" (click)="doConfirm()">确定
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

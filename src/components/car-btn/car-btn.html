@@ -1,0 +1,9 @@
+<div class="operation-btns">
+  <button ion-button clear class="sub" (click)="sub()" *ngIf="salesDetail.salesQty > 0">
+    <ion-icon color="primary" name="remove-circle-outline" #subEle></ion-icon>
+  </button>
+  <span tappable class="num" (click.stop)="setNumberData()">{{salesDetail?.salesQty > 0?salesDetail?.salesQty :''}} </span>
+  <button ion-button clear class="add" (click)="woShopService.addCom(salesDetail)">
+    <ion-icon color="primary" name="add-circle" #addEle></ion-icon>
+  </button>
+</div>

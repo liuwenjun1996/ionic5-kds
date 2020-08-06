@@ -1,0 +1,12 @@
+<!-- Generated template for the SelectcateComponent component -->
+<div>
+  <ion-item tappable (click)="showPayments()" (tap)="back(commidtyTypeId)" *ngIf="type=='1'" no-lines>
+    <ion-label>
+      支付方式
+    </ion-label>
+    <ion-label class="right-input" [color]="payment?.name?'third':'placeholder'">
+      {{payment?.name}}<span *ngIf="payment?.name" style="color: #999999;">必选</span>
+    </ion-label>
+    <ion-icon name="arrow-forward" item-end small style="color: #999999;"></ion-icon>
+  </ion-item>
+</div>

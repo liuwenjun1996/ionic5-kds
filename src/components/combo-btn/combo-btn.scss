@@ -1,0 +1,49 @@
+combo-btn {
+    .operation-btns {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+        .button {
+          margin: 0;
+          height: auto;
+          padding-left: 0;
+          padding-right: 0;
+          min-height: auto;
+        }
+    
+        .add {
+          padding-left:r(5px);
+        }
+    
+        .sub {
+          padding-right:r(5px);
+        }
+    
+        .num {
+          font-size: r(30px);
+          padding: r(10px) r(10px);
+        //   color: #333;
+        //   background: #f5f9fc;
+        //   display: block;
+        //   padding: r(10px) 0;
+        //   overflow: hidden;
+          text-align: center;
+        //   margin: 0 r(10px);
+        //   border: r(1px) solid #eee;
+        }
+       .not-combo{
+        width: r(100px);
+        // background: #efefef;
+        border: 1px solid #efefef;
+        padding: r(10px);
+       }
+
+        ion-icon {
+          font-size: r(50px);
+        }
+        .span{
+          background: #efefef;
+        }
+      }
+}

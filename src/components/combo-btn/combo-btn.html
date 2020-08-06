@@ -1,0 +1,10 @@
+<div class="operation-btns">
+  <button ion-button clear class="sub" (click.stop)="subData()" *ngIf="com.tmpQty>0">
+    <ion-icon color="primary" name="remove-circle-outline" #subEle></ion-icon>
+  </button>
+  <span tappable class="num " [ngClass]="{'not-combo':name!= 'comBo'}" *ngIf="com.tmpQty>0"
+    (click.stop)="setNumberData()">{{com.tmpQty}}</span>
+  <button ion-button clear class="add" (click.stop)="addData()">
+    <ion-icon color="primary" name="add-circle" #addEle></ion-icon>
+  </button>
+</div>

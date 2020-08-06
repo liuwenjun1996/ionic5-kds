@@ -1,0 +1,9 @@
+<div class="operation-btns">
+  <button ion-button clear class="sub" (click)="subData()" *ngIf="aditionCom.salesQty > 0">
+    <ion-icon color="primary" name="remove-circle-outline" #subEle></ion-icon>
+  </button>
+  <span class="num">{{aditionCom.salesQty > 0?aditionCom.salesQty :''}}</span>
+  <button ion-button clear class="add" (click)="addData($event)">
+    <ion-icon color="primary" name="add-circle" #addEle></ion-icon>
+  </button>
+</div>

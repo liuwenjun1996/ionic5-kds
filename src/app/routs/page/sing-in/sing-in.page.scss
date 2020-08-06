@@ -1,0 +1,98 @@
+ // #f87c38
+ @import "../../../../assets/css/base.scss";
+
+ .aibao-bg {
+
+   background-color     : #adeb04 !important;
+   background           : url('../../../../assets/imgs/sign/bg.jpg') no-repeat center center fixed !important;
+   background-repeat    : no-repeat;
+   background-size      : cover !important;
+   background-attachment: fixed;
+   overflow             : scroll;
+   height               : 100%;
+   width                : 100%;
+   padding              : 0px;
+   margin               : 0px;
+
+   //    background: url(../assets/imgs/sign/bg.jpg) no-repeat center;
+   background-repeat    : no-repeat;
+   background-size      : cover !important;
+   background-attachment: fixed;
+
+
+ }
+
+ .login-form-hander {
+   padding-top   : r(50px);
+   font-size     : r(80px);
+   padding-bottom: r(10px);
+ }
+
+ .login-form {
+   //  background       : #ffffff;
+   //  //  margin: r(20px) r(20px) r(20px) r(20px);
+   //  width            : 80%;
+   //  // height: 35%;
+   //  // height: r(500px);
+   //  // position: absolute;
+   //  //  height       : r(560px) !important;
+   //  margin-top       : 10%;
+   //  margin-right     : 10%;
+   //  margin-left      : 10%;
+   //  border-radius    : 10px;
+
+   .login-form-list {
+     padding-top       : r(30px);
+     //  padding-bottom: r(50px);
+   }
+
+   img {
+     width : r(50px);
+     height: r(50px);
+   }
+
+   ion-input {
+     font-size: r(30px);
+   }
+
+   .login-form-botton {
+     // padding-bottom: r(30px);
+     // position: absolute;
+     //  width            : 80%;
+     //  margin-right     : 5%;
+     //  margin-left      : 5%;
+     margin-top       : r(30px);
+     margin-bottom    : r(10px) !important;
+     // padding-bottom:0%!important;
+     color            : #000;
+     height           : 75%;
+
+     .button {
+       background: #fdbc01;
+       //  height: 80%;
+       //  margin: 20px;
+     }
+   }
+ }
+
+ .item-native {
+   padding: 0 0 10px 0;
+ }
+
+
+ .isLine-ip {
+   background: #fdbc01 !important;
+   border    : 0px solid #ffffff;
+ }
+
+ .button-ip {
+   font-size: r(30px);
+ }
+
+ .login-text {
+   font-size: r(38px) !important;
+ }
+
+ // .scroll-content {
+ //   background: #ceeb2e;
+ // }

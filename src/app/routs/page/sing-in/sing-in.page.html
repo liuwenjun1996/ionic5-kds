@@ -1,0 +1,75 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>登录</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="aibao-bg">
+
+    <div class="login-form">
+
+      <div class="login-form-hander jz-center">
+        爱宝智能餐厅 (V{{appConstants.VERSION}})
+      </div>
+      <ion-card no-lines class="login-form-list">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label> <img src="assets/imgs/sign/account.png" slot="start" width="22"></ion-label>
+            <ion-input type="text" maxlength="50" [(ngModel)]="username" clearInput placeholder="请输入员工账号"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label> <img src="assets/imgs/sign/password.png" start width="22"></ion-label>
+            <ion-input type="password" [(ngModel)]="password" clearInput placeholder="请输入密码" id="inp"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-button no-padding style="width: 100%;" size="large" class="login-form-botton" color='primary'
+              expand="block" (click)="signIn()" [disabled]="!username || !password"> 登录
+            </ion-button>
+          </ion-item>
+          <!-- <combo-btn></combo-btn> -->
+        </ion-list>
+      </ion-card>
+      <!-- <ion-item button block class="button button-full button-change" color="main" (click)="signIn()"
+          [disabled]="!username || !password">
+          <span class="login-text" style="font-size: 18px">登录</span>
+        </ion-item> -->
+      <!-- <button ion-button block class="button button-full button-change" color="main" (click)="setRoot()">
+          点餐页面
+        </button> -->
+    </div>
+
+    <div class="bottom-buttons jz-center">
+      <ion-row class="row-button">
+        <!-- <ion-col>
+            <button class="button-ip" (click)="goToQr()"><img src="assets/imgs/sign/qrscan.png" width="90%" height="95%">
+              扫描收银台
+            </button>
+          </ion-col> -->
+        <ion-col>
+          <button class="button-ip" (click)="inputIp()"><img src="assets/imgs/sign/inputip.png" width="90%"
+              height="95%">
+            手动输入IP
+          </button>
+        </ion-col>
+        <ion-col *ngIf="!isLine">
+          <button class="button-ip" (click)="onShowIP()"><img src="assets/imgs/sign/noline.png" width="90%"
+              height="95%">
+            收银台连接
+          </button>
+        </ion-col>
+        <ion-col *ngIf='isLine' class="isLine-ip">
+          <button (click)="onShowIP()"><img src="assets/imgs/sign/line.png" width="90%" height="95%">
+            <span style="color: #FFFFFF">已连接</span>
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!-- <div style="height: 50%;">
+      <number-keyboard></number-keyboard>
+    </div> -->
+  </div>
+
+
+</ion-content>

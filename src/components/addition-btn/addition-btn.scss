@@ -1,0 +1,32 @@
+addition-btn {
+    .operation-btns {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+        .button {
+            margin: 0;
+            height: auto;
+            padding-left: 0;
+            padding-right: 0;
+            min-height: auto;
+        }
+    
+        .add {
+            padding-left:r(30px);
+        }
+    
+        .sub {
+            padding-right:r(30px);
+        }
+    
+        .num {
+            font-size:r(32px);
+            color: #333;
+        }
+    
+        ion-icon {
+            font-size: r(60px);
+        }
+    }
+}
